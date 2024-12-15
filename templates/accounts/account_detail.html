@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Details</title>
+</head>
+<body>
+    <h1>Account Details</h1>
+    <p>Account Holder: {{ account.account_holder }}</p>
+    <p>Account Number: {{ account.account_number }}</p>
+    <p>Balance: {{ account.balance }}</p>
+    <a href="{% url 'list-accounts' %}">Back to Accounts</a>
+</body>
+</html>
