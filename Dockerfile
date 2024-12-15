@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.13.1-slim
 
 ENV PYTHONUNBUFFERED=1
 
@@ -9,4 +9,4 @@ RUN pip install -r requirements.txt
 
 COPY . /app/
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "127.0.0.1:8000"]
